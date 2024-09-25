@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="log/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="log/css/util.css">
+    <link rel="stylesheet" type="text/css" href="log/css/cadEve.css">
+    <link href="log/scss/cadEve.scss" rel="stylesheet/scss" type="text/css">
+
+    <title>Cadastro de eventos</title>
+</head>
+
+<body>
+    <form action="savecad_usu.php" method="POST" enctype="multipart/form-data">
+        <!--client comum-->
+        <?php if($tipo_usu == 'cliente'): ?>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form">
+                        <span class="login100-form-title p-b-26">
+                            CRIE SEU EVENTO
+                        </span>
+
+                        <div class="wrap-input100 validate-input" data-validate="Digite o nome do evento">
+                            <input class="input100" type="text" name="nome">
+                            <span class="focus-input100" data-placeholder="Insira o nome do evento"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Digite sua data de nascimento">
+                            <input class="input100" type="date" name="Data do evento">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Digite o local do evento">
+                            <input class="input100" type="text" name="local">
+                            <span class="focus-input100" data-placeholder="Local do evento"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Digite seu número de pessoas">
+                            <input class="input100" type="number" name="ingressos">
+                            <span class="focus-input100" data-placeholder="Número de ingressos"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Digite o valor dos ingressos">
+                            <input class="input100" type="number" name="ingressos">
+                            <span class="focus-input100" data-placeholder="Valor dos ingressos"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Digite o limite de pessoas">
+                            <input class="input100" type="number" name="pessoas">
+                            <span class="focus-input100" data-placeholder="Número de pessoas suportadas"></span>
+                        </div>
+
+
+                        <div class="wrap-input100 validate-input" data-validate="Digite o Horário do evento">
+                            <input class="input100" type="time" name="horário">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Limite de idade">
+                            <input class="input100" type="number" name="idade">
+                            <span class="focus-input100" data-placeholder="Restrição de idade"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Descrição do evento">
+                            <input class="input100" type="text" name="descrição">
+                            <span class="focus-input100" data-placeholder="Descrição de evento "></span>
+                        </div>
+                        <input type="file" name="file" id="file" class="inputfile" />
+                        <label for="file">Selecione uma foto do evento</label>   
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn">
+                                    Criar Evento
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <?php endif;?>
+        <!-- provedor -->
+
+
+
+    </form>
+    <script src="log/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="log/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="log/vendor/bootstrap/js/popper.js"></script>
+    <script src="log/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="log/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="log/vendor/daterangepicker/moment.min.js"></script>
+    <script src="log/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="log/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="log/js/main.js"></script>
+</body>
+
+</html>
