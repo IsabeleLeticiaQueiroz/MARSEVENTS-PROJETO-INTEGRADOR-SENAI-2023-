@@ -1,6 +1,6 @@
 # MARSEVENTS - PROJETO INTEGRADOR SENAI 2023
 
-![Preview](./images/Captura de tela 2025-06-20 182917.png)
+![Preview](./images/pv1.png)
 
 
 📌 **PT-BR:**  
