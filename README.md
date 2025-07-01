@@ -1,6 +1,6 @@
 # MARSEVENTS - PROJETO INTEGRADOR SENAI 2023
 
-![Preview do Projeto](./imgs/preview.png)
+![Preview do Projeto](./images/Captura de tela 2025-06-20 182917.png)
 
 📌 **PT-BR:**  
 Este projeto integrador foi desenvolvido com o objetivo de ser uma plataforma para o comércio de eventos, facilitando a comunicação entre pessoas que desejam comprar ingressos, criar seus próprios eventos e contratar prestadores de serviço. O sistema também permite que prestadores concorram a vagas disponíveis para trabalhar nos eventos divulgados.  
